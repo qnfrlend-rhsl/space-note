@@ -52,7 +52,6 @@ body {
     font-weight: 700;
     letter-spacing: 3px;
     color: #222;
-    white-space: nowrap;
 }
 
 .logo:first-letter {
