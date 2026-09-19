@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SPACE NOTE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 상단 메뉴 -->
+    <header class="top-header">
+
+        <div class="logo">
+            ✦ SPACE NOTE 배성현
+        </div>
+
+        <nav class="main-nav">
+            <a href="#home">HOME</a>
+            <a href="#photo">PHOTO</a>
+            <a href="#journal">JOURNAL</a>
+            <a href="#about">ABOUT</a>
+        </nav>
+
+    </header>
+
+
+    <!-- 메인 -->
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="hero">
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85"
+                    alt="아름다운 실내 공간"
+                >
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    SPACE • INTERIOR • LIFE
+                </p>
+
+                <h1>SPACE NOTE</h1>
+
+                <p class="hero-description">
+                    공간을 기록하고,<br>
+                    그 안의 이야기를 담습니다.
+                </p>
+
+                <a href="#photo" class="hero-button">
+                    사진 보러가기
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- PHOTO -->
+        <section id="photo" class="photo-section">
+
+            <div class="section-title">
+                <p>PHOTO</p>
+                <h2>Space Archive</h2>
+                <span>공간을 기록합니다.</span>
+            </div>
+
+
+            <!-- 사진 목록 -->
+            <div class="photo-grid" id="photoGrid">
+
+                <div class="photo-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                        alt="실내 공간 사진"
+                    >
+                    <div class="photo-caption">
+                        따뜻한 거실
+                    </div>
+                </div>
+
+                <div class="photo-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85"
+                        alt="인테리어 공간 사진"
+                    >
+                    <div class="photo-caption">
+                        모던한 주방
+                    </div>
+                </div>
+
+                <div class="photo-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+                        alt="공간 디자인 사진"
+                    >
+                    <div class="photo-caption">
+                        편안한 공간
+                    </div>
+                </div>
+
+                <div class="photo-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85"
+                        alt="따뜻한 거실 공간"
+                    >
+                    <div class="photo-caption">
+                        자연을 담은 집
+                    </div>
+                </div>
+
+                <div class="photo-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85"
+                        alt="모던한 실내 공간"
+                    >
+                    <div class="photo-caption">
+                        빛이 머무는 공간
+                    </div>
+                </div>
+
+                <div class="photo-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85"
+                        alt="아름다운 주거 공간"
+                    >
+                    <div class="photo-caption">
+                        일상의 작은 기록
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 사진 업로드 -->
+            <section class="upload-section">
+
+                <div class="upload-inner">
+
+                    <p class="upload-label">PHOTO</p>
+
+                    <h2>사진을 기록하세요.</h2>
+
+                    <p class="upload-description">
+                        새로운 공간의 순간을 SPACE NOTE에 남겨보세요.
+                    </p>
+
+                    <label for="photoInput" class="upload-select">
+                        사진 선택
+                    </label>
+
+                    <input
+                        type="file"
+                        id="photoInput"
+                        accept="image/*"
+                    >
+
+                    <input
+                        type="text"
+                        id="photoDescription"
+                        placeholder="사진 설명을 입력하세요."
+                    >
+
+                    <button id="uploadButton">
+                        사진 업로드
+                    </button>
+
+                    <p id="uploadStatus"></p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- JOURNAL -->
+<section id="journal" class="journal-section">
+
+    <div class="section-title">
+        <p>JOURNAL</p>
+        <h2>Notes of Space</h2>
+        <span>공간에서 발견한 작은 이야기.</span>
+    </div>
+
+
+    <!-- JOURNAL 목록 -->
+    <div class="journal-list" id="journalList">
+
+        <article class="journal-item">
+
+            <p class="journal-date">
+                2026. 09. 18
+            </p>
+
+            <h3>
+                공간은 삶을 담는 그릇
+            </h3>
+
+            <p>
+                좋은 공간은 특별한 것이 아니라,
+                매일의 작은 순간을 편안하게 만들어주는 것인지도 모릅니다.
+            </p>
+
+        </article>
+
+    
+
+        <article class="journal-item">
+
+            <p class="journal-date">
+                2026. 09. 17
+            </p>
+
+            <h3>
+                빛이 머무는 자리
+            </h3>
+
+            <p>
+                같은 공간도 빛이 들어오는 방향에 따라
+                전혀 다른 분위기를 만들어냅니다.
+            </p>
+
+        </article>
+
+    </div>
+
+
+   <!-- JOURNAL 등록 -->
+<section class="journal-write-section">
+
+    <div class="journal-write-inner">
+
+        <p class="journal-write-label">
+            JOURNAL
+        </p>
+
+        <h2>
+            일상 이야기를 기록하세요.
+        </h2>
+
+        <p class="journal-write-description">
+            공간에서 발견한 이야기를 SPACE NOTE에 남겨보세요.
+        </p>
+
+        <input
+            type="text"
+            id="journalTitle"
+            placeholder="제목을 입력하세요."
+        >
+
+        <textarea
+            id="journalContent"
+            placeholder="공간에 대한 이야기를 입력하세요."
+        ></textarea>
+
+        <button id="journalSaveButton">
+            글 등록
+        </button>
+
+        <p id="journalStatus"></p>
+
+    </div>
+
+</section>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+
+    <div class="section-title">
+        <p>ABOUT</p>
+        <h2>About SPACE NOTE</h2>
+        <span>공간과 일상을 기록하는 작은 노트.</span>
+    </div>
+
+
+    <!-- ABOUT 글 목록 -->
+    <div class="about-list" id="aboutList">
+    </div>
+
+
+    <!-- ABOUT 글쓰기 -->
+    <section class="about-write-section">
+
+        <div class="about-write-inner">
+
+            <p class="about-write-label">
+                ABOUT
+            </p>
+
+            <h2>
+                소중한 글을 기록하세요.
+            </h2>
+
+            <p class="about-write-description">
+                SPACE NOTE에 대한 이야기를 남겨보세요.
+            </p>
+
+            <input
+                type="text"
+                id="aboutTitle"
+                placeholder="제목을 입력하세요."
+            >
+
+            <textarea
+                id="aboutContent"
+                placeholder="SPACE NOTE에 대한 이야기를 입력하세요."
+            ></textarea>
+
+            <button id="aboutSaveButton">
+                글 등록
+            </button>
+
+            <p id="aboutStatus"></p>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+        <!-- 사진 크게 보기 -->
+        <div id="photoModal" class="photo-modal">
+
+            <button class="photo-modal-close">
+                &times;
+            </button>
+
+            <img
+                id="modalImage"
+                src=""
+                alt="확대된 사진"
+            >
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
