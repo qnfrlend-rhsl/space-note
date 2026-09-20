@@ -638,6 +638,10 @@ body {
 
 @media (max-width: 700px) {
 
+    .upload-select {
+    line-height: 20px;
+    }
+
     #uploadButton {
         margin-left: 0;
         margin-top: 10px;
