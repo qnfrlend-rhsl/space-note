@@ -1,6 +1,6 @@
 {
-  "name": "SPACE NOTE",
-  "short_name": "SPACE NOTE",
+  "name": "배성현 SPACE NOTE",
+  "short_name": "배성현 SPACE NOTE",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
